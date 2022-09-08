@@ -1,15 +1,36 @@
 {
   "namespace": "com.udacity",
   "type": "record",
-  "name": "weather.key",
+  "name": "arrival.value",
   "fields": [
     {
-      "name": "temperature",
+      "name": "station_id",
+      "type": "int"
+    },
+    {
+      "name": "train_id",
       "type": ["string", "null"]
     },
     {
-      "name": "status",
+      "name": "direction",
+      "type": ["string", "null"]
+    },
+    {
+      "name": "line",
+      "type": ["string", "null"]
+    },
+    {
+      "name": "train_status",
+      "type": ["string", "null"]
+    },
+    {
+      "name": "prev_station_id",
+      "type": ["int", "null"]
+    },
+    {
+      "name": "prev_direction",
       "type": ["string", "null"]
     }
+
   ]
 }
